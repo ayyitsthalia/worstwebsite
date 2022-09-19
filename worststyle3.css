@@ -1,0 +1,178 @@
+body {
+	font-family: Montserrat;
+	font-size: 16px;
+	color: white;
+	background-color: #4bb5c9;
+	align-items: center;
+	justify-content: center;
+	margin: 30px;
+	height: 100vh;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+	background-image:url('https://i.pinimg.com/originals/ea/37/b2/ea37b26608bb9582e5f5ec8742146125.gif'); 
+	background-repeat:repeat;
+}
+p {
+	text-align: left;
+	width: 800px;
+}
+
+img {
+	border-radius: 15px;
+	margin-right: 40px
+	padding: 10px;
+}
+
+img:hover{
+	transform: translate(0, 0.5em);
+}
+
+.img1 {
+	margin-top: 30px;
+	margin-inline: 2px;
+}
+
+.inspiration {
+	font-family: monospace;
+	font-size: 4px;
+	color: #000f80;
+	background-color: pink;
+	transform: rotate(-5deg);
+	border-radius: 10px;
+	width: 220px;
+	height: 40px;
+	margin-top: 35px;
+	margin-right:0;
+	white-space: pre;
+}
+
+.inspiration:hover {
+	transform: rotate(5deg);
+}
+
+.slant {
+	transform: rotate(2deg);
+	padding-left: 10px;
+	position: relative;
+	margin-top: -40px;
+	text-align: left;
+}
+
+.monospace {
+	font-family: Courier, Monaco, monospace;
+}
+
+.tourney {
+	font-family: 'Tourney', cursive;
+	width: 70px;
+	height: 40px;
+	margin-inline: 30px;
+}
+
+.vertical {
+	writing-mode: vertical-rl; 
+}
+
+.fontsmaller {
+	font-size: 14px;
+}
+
+.exaggeration {
+	background-color: #37a693;
+	width: 825px;
+	height: 210px;
+	margin-inline: 550px 40px;
+	border-radius: 20px;
+	margin-top: -430px;
+}
+
+.exaggeration:hover {
+	animation: spin 2s linear infinite;
+}
+
+.bborder {
+	background-color: black;
+}
+
+.navigation{
+	position: relative;
+	margin: 30px;
+	text-align: center;
+	padding-bottom: 40px;
+}
+/* button dontpushme */
+.button0 {
+	font-family: Oswald;
+	background-color: #eba9b9;
+	color: #b54a65;
+	text-decoration: none;
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1.428571429;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	border: 2px dashed #b54a65;
+	border-radius: 6px;
+}
+.button0:hover {
+	background-color: #a1f6f7;
+	color: #b54a65;
+	border: 2px solid #9ec96b;
+	transform: translate(0, 0.5em); /* button moves down */
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+/* button dontpushme */
+
+/* tha lilies blink start */
+#tha {
+	font-size: 30px;
+	color: #fffcf2;
+	animation: blink0 2s linear reverse infinite;
+	position: relative;
+	letter-spacing: 0.5em;
+}
+#lilies {
+	font-size: 30px;
+	opacity: 1;
+	animation: blink1 2s linear  reverse infinite;
+	letter-spacing: 0.4em;
+}
+
+@keyframes blink0 {
+	0% { opacity: 0.35;}
+	20% { opacity: 0.1; }
+	40% { opacity: 0.35; }
+	60% { opacity: 0.7; }
+	80% { opacity: 0.35; }
+	100% { opacity: 0.7; }
+}
+
+@keyframes blink1 {
+  0% { opacity: 1; }
+	25% { opacity: 0.35; }
+  50% { opacity: 1; color: #d6ad27; }
+	75% { opacity: 0.35; }
+  100% { opacity: 1; }
+}
+/* tha lilies blink end */
+
+@keyframes spin {
+	0% { transform: rotate(0deg); } 
+  100% { transform: rotate(360deg); }
+}
+
+a:link {
+	color: #579100;
+	background color: transparent;
+}
+
+a:visited {
+	color: #b040bd;
+	background color: transparent;
+}

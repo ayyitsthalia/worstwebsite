@@ -1,0 +1,204 @@
+body {
+	font-family: Montserrat;
+	font-size: 40px;
+	color: white;
+	background-color: #9ec96b;
+	align-items: center;
+	justify-content: center;
+	margin: 30px;
+	height: 100vh;
+	background-image:url('https://i.pinimg.com/originals/6c/d7/4b/6cd74bae87b2025e3d671a23dbf4b3ca.gif'); 
+	background-repeat:repeat;
+}
+
+img:hover{
+	transform: translate(0, -0.5em); /* button moves down */
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.img1{
+	position: relative;
+	top: 35px;
+	left: 760px;
+	width: 200px;
+	height: 100px;
+}	
+
+.img2{
+	position: absolute;
+	top: 120px;
+	left: 580px;
+	width: 200px;
+	height: 100px;
+}
+
+.img3{
+	position: absolute;
+	top: 90px;
+	left: 1003px;
+	transform: rotate(-2deg);
+}
+
+.img4{
+	position: absolute;
+	top: 350px;
+	left: 580px;
+	width: 200px;
+	height: 100px;
+	animation: rotate 3s linear infinite;
+}
+
+.img5 {
+	position: absolute;
+	top: 565px;
+	left: 990px;
+	width: 200px;
+	height: 100px;
+	transform: rotate(2deg);
+	padding-bottom: 80px;
+}
+
+img:hover {
+	border-radius: 15px 50px;
+}
+
+.art{
+	background-color: #ebb134;
+	color: #a1234f;
+	position: relative;
+	font-family: monospace;
+	border-radius: 15px;
+	font-size: 8px;
+	font-weight: 600;
+	margin-left: 960px;
+	margin-top: 250px;
+	width: 450px;
+	height: 80px;
+	white-space: pre;
+}
+
+.art:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.flower {
+	animation: spin 1.5s ease-out infinite;
+	margin-inline: 330px;
+	margin-top: 60px;
+	background-color: pink;
+	border-radius: 60px;
+	color:  whitesmoke;
+}
+
+.flower:hover {
+	background-color: lightblue;
+	font-family: monospace;
+}
+
+.mushroom {
+	position: relative;
+	font-family: monospace;
+	color: red;
+	font-size: 10px;
+	margin-left: 30px;
+	margin-inline: 100px;
+	margin-bottom: 80px;
+	white-space: pre;
+	border-radius: 80px;
+	background-color: beige;
+	width: 222px;
+	height: 320px;
+}
+
+.mushroom:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.navigation{
+	position: absolute;
+	width: 160px;
+	float: left;
+}
+
+.home {
+	font-size: 40px;
+	color: #a33657;
+	background-color: #4ea336;
+	font-family: times;
+	text-decoration: none;
+}
+.home:hover {
+	color: #4ea336;
+	background-color: #a33657;
+	text-decoration: underline;
+}
+.pageone {
+	font-size: 80px;
+	color: #33415c;
+	background-color: #ffe1a8;
+	font-family: arial;
+	text-decoration: none;
+}
+.pageone:hover {
+	color: #ffe1a8;
+	background-color: #33415c;
+	text-decoration: underline;
+}
+
+.pagetwo {
+	font-size: 60px;
+	color: #ff70a6;
+	background-color: lightblue;
+	font-family: courier new;
+	text-decoration: none;
+}
+.pagetwo:hover{
+	color: lightblue;
+	background-color: #ff70a6;
+	text-decoration: underline;
+}
+
+/* tha lilies blink start */
+#tha {
+	font-size: 30px;
+	color: #fffcf2;
+	animation: blink0 2s linear reverse infinite;
+	position: relative;
+	letter-spacing: 0.5em;
+}
+#lilies {
+	font-size: 30px;
+	opacity: 1;
+	letter-spacing: 0.4em;
+	padding-bottom: 10px;
+	animation: blink1 2s linear reverse infinite;
+}
+
+@keyframes blink0 {
+	0% { opacity: 0.35;}
+	20% { opacity: 0.1; }
+	40% { opacity: 0.35; }
+	60% { opacity: 0.7; }
+	80% { opacity: 0.35; }
+	100% { opacity: 0.7; }
+}
+
+@keyframes blink1 {
+  0% { opacity: 1; }
+	25% { opacity: 0.35; }
+  50% { opacity: 1; color: #8c0404; }
+	75% { opacity: 0.35; }
+  100% { opacity: 1; }
+}
+/* tha lilies blink end */
+
+@keyframes spin {
+	0% { transform: rotate(0deg); } 
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes rotate {
+	0% { transform: rotate(0deg); } 
+	50% { transform: rotate(20deg); 
+	100% {transform: rotate(0deg); }
+}

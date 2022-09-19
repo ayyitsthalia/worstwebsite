@@ -1,0 +1,170 @@
+body {
+	font-family: Montserrat;
+	font-size: 40px;
+	color: white;
+	background-color: #e36f86;
+	align-items: center;
+	justify-content: center;
+	margin: 30px;
+	height: 100vh;
+	background-image:url('https://www.icegif.com/wp-content/uploads/icegif-4145.gif'); 
+	background-repeat:repeat;
+}
+
+img:hover{
+	border-radius: 100px;
+	transform: translate(0, -0.5em); /* button moves down */
+}
+
+.navigation{
+	position: absolute;
+	width: 0px;
+	right: 1540px;
+	top: 120px;
+}
+
+/* button dontpushme */
+.button0 {
+	font-family: Oswald;
+	background-color: #f6f1d1;
+	color: #9ec96b;
+	text-decoration: none;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	border: 2px solid #9ec96b;
+	text-transform: uppercase;
+	border-radius: 6px;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1.428571429;
+}
+.button0:hover {
+	background-color: #eba9b9;
+	color: #fffcf2;
+	border: 2px solid #d95575;
+	transform: translate(0, 0.5em); /* button moves down */
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+/* button dontpushme */
+
+.look {
+  float: left;
+  width: 0.7em;
+  font-size: 200%;
+  font-family: algerian, courier;
+  line-height: 80%;
+  margin-left: 830px;
+}
+
+.computer {
+	position: relative;
+	font-family: monospace;
+	font-size: 8px;
+	margin-left: 100px;
+	white-space: pre;
+	width: 380px;
+	height: 330px;
+}
+.computer:hover {
+	animation: spin 5s ease infinite;
+}
+
+.gameboy{
+	position: relative;
+	font-family: monospace;
+	color: yellow;
+	font-size: 8px;
+	margin-left: 510px;
+	margin-right: 910px;
+	margin-top: -250px;
+	white-space: pre;
+}
+
+.gameboy:hover {
+	transform: rotate(-10deg);
+}
+
+.television {
+	position: relative;
+	font-family: monospace;
+	color: lightblue;
+	font-size: 14px;
+	margin-left: 830px;
+	margin-right: 910px;
+	margin-top: -335px;
+	white-space: pre;
+	width: 235px;
+	height: 330px;
+	padding-bottom: 50px;
+}
+
+.television:hover {
+	animation: spin 5s ease infinite;
+}
+
+.flowerspin {
+	color: pink;
+	animation: spin 3s linear infinite;
+	font-size: 40px;
+	position: sticky;
+	left: 1500px;
+	bottom: 280px;
+}
+
+.flowerspin:hover {
+	color: orange;
+}
+.img1 {
+	position: relative;
+	left: 580px;
+	bottom: 320px;
+}
+
+.img2 {
+	position: relative;
+	left: 110px;
+	bottom: 290px;
+	border-radius: 100px;
+}
+
+/* tha lilies blink start */
+#tha {
+	font-size: 30px;
+	color: #fffcf2;
+	animation: blink0 2s linear reverse infinite;
+	position: relative;
+	letter-spacing: 0.5em;
+}
+#lilies {
+	font-size: 30px;
+	opacity: 1;
+	animation: blink1 2s linear  reverse infinite;
+	letter-spacing: 0.4em;
+}
+
+@keyframes blink0 {
+	0% { opacity: 0.35;}
+	20% { opacity: 0.1; }
+	40% { opacity: 0.35; }
+	60% { opacity: 0.7; }
+	80% { opacity: 0.35; }
+	100% { opacity: 0.7; }
+}
+
+@keyframes blink1 {
+  0% { opacity: 1; }
+	25% { opacity: 0.35;}
+  50% { opacity: 1; color: #7b9c54; }
+	75% { opacity: 0.35; }
+  100% { opacity: 1; }
+}
+/* tha lilies blink end */
+
+@keyframes spin {
+	0% { transform: rotate(0deg); } 
+  100% {transform: rotate(360deg); }
+}
